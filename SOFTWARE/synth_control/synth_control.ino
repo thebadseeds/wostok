@@ -21,7 +21,7 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 #define CV_OUT_VCO 10
 #define CV_OUT_VCA 11
 #define CV_OUT_VCF 12
-#define ADSR 13
+#define ADSR 9
 /**
  * machine state    description
  *  0               IDLE
@@ -122,6 +122,9 @@ void setup() {
 
 
 void loop() { 
+
+ handleNoteOn(1, 60, 60);
+ handleNoteOff(1, 60, 60);
  MIDI.read();
  delay(100);
 }
