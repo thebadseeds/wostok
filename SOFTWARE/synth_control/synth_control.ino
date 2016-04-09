@@ -22,13 +22,6 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 #define CV_OUT_VCA 11
 #define CV_OUT_VCF 12
 #define ADSR 9
-/**
- * machine state    description
- *  0               IDLE
- *  1               NoteOn
- *  2               NoteOff
- */
-static int machine_state = 0;
 
 void writeADSR(byte state, int a, int d, int s, int r, int v, int l) 
 {
@@ -43,7 +36,6 @@ void writeADSR(byte state, int a, int d, int s, int r, int v, int l)
    *    v -> velocity
    *    l -> sustain-level
    */
-  
   static int PWM_level = 0;
   
   switch(state){
