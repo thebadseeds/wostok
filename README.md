@@ -1,8 +1,7 @@
 ## Wostok
-Open Hardware Analog Synthesizer
+### Open Hardware Analog Synthesizer
 
-![Front of PCB][https://i.imgur.com/jbyNVkk.jpg]
-![Back of PCB][https://i.imgur.com/JB10u9A.jpg]
+![Front PCB](https://i.imgur.com/jbyNVkk.jpg)
 PCB created with KiCad
 
 This semi-maintained repository is aimed towards people that want to hack their own analog synthesizer using the XR2206 voltage controlled oscillator. 
